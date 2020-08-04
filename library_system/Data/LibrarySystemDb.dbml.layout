@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="LibrarySystemDb">
+  <DataContextMoniker Name="/LibrarySystemDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e0e5916c-bbde-49eb-9d9f-038c95f43da7" absoluteBounds="3.375, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/MstBorrower" />
+      <nestedChildShapes>
+        <elementListCompartment Id="100f468d-11ea-441f-89ee-e9de81a2433d" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac5c8b17-b425-4f12-8844-94242d814089" absoluteBounds="2.125, 5.125, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/MstLibraryBook" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77bf23c0-6f5b-4000-b26d-03dd3e66bc6f" absoluteBounds="2.14, 5.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3efa7124-504f-4bf6-9dc3-1d316ad1f6c4" absoluteBounds="5.875, 0.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/MstLibraryCard" />
+      <nestedChildShapes>
+        <elementListCompartment Id="133a049c-a8e7-495a-8ca5-d0eb9238071d" absoluteBounds="5.8900000000000006, 0.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 1.96235270182292); (5.375 : 1.96235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstLibraryCard/MstLibraryCard_MstBorrower" />
+      <nodes>
+        <classShapeMoniker Id="3efa7124-504f-4bf6-9dc3-1d316ad1f6c4" />
+        <classShapeMoniker Id="e0e5916c-bbde-49eb-9d9f-038c95f43da7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" absoluteBounds="0.75, 2, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/MstUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d7a943c-3855-4f91-a36a-0bc1e9c03939" absoluteBounds="0.765, 2.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.80850341796875); (3.375 : 2.80850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_MstBorrower" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="e0e5916c-bbde-49eb-9d9f-038c95f43da7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.34175170898438); (3.375 : 2.34175170898438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_MstBorrower1" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="e0e5916c-bbde-49eb-9d9f-038c95f43da7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.4375 : 4.34780110677083); (2.4375 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_MstLibraryBook" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="ac5c8b17-b425-4f12-8844-94242d814089" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.65625 : 4.34780110677083); (2.65625 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_MstLibraryBook1" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="ac5c8b17-b425-4f12-8844-94242d814089" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="af740b82-f72f-4a23-ab1b-f3ec5f70cf65" absoluteBounds="0.625, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/MstUserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50331dc7-f513-474b-9907-e3dc34d12c15" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.6875 : 1.69399251302083); (1.6875 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUserType/MstUserType_MstUser" />
+      <nodes>
+        <classShapeMoniker Id="af740b82-f72f-4a23-ab1b-f3ec5f70cf65" />
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3c91550d-d2f3-47fd-9cfa-33c17764a92c" absoluteBounds="5.375, 5.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/LibrarySystemDbDataContext/TrnBorrow" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52af8a80-4b0a-48e1-8a37-c12efc736304" absoluteBounds="5.39, 5.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 3.55210611979167); (5.625 : 3.55210611979167); (5.625 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstBorrower/MstBorrower_TrnBorrow" />
+      <nodes>
+        <classShapeMoniker Id="e0e5916c-bbde-49eb-9d9f-038c95f43da7" />
+        <classShapeMoniker Id="3c91550d-d2f3-47fd-9cfa-33c17764a92c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.625 : 3.42470540364583); (6.625 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstLibraryCard/MstLibraryCard_TrnBorrow" />
+      <nodes>
+        <classShapeMoniker Id="3efa7124-504f-4bf6-9dc3-1d316ad1f6c4" />
+        <classShapeMoniker Id="3c91550d-d2f3-47fd-9cfa-33c17764a92c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.01365397135417); (5.4999975 : 4.01365397135417); (5.4999975 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_TrnBorrow" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="3c91550d-d2f3-47fd-9cfa-33c17764a92c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.2119800390625); (5.41666416666667 : 4.2119800390625 : JumpStart); (5.70833333333333 : 4.2119800390625 : JumpEnd); (5.7500025 : 4.2119800390625); (5.7500025 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LibrarySystemDbDataContext/MstUser/MstUser_TrnBorrow1" />
+      <nodes>
+        <classShapeMoniker Id="1aa83c1b-a283-4c20-a512-8ad5dec5b5ae" />
+        <classShapeMoniker Id="3c91550d-d2f3-47fd-9cfa-33c17764a92c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
